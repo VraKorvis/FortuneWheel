@@ -1,0 +1,46 @@
+# ======================================
+# Unity & Rider .gitignore
+# ======================================
+
+# --- Unity generated folders ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# --- Asset meta data should only be ignored when the corresponding asset is also ignored ---
+!*.meta
+
+# --- Crash Reports & Profiling ---
+sysinfo.txt
+
+# --- Rider & VS Code ---
+.idea/
+.vscode/
+*.sln.DotSettings*
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Auto-generated files by package managers ---
+Packages/com.unity.*
+/Packages/manifest.json.meta
+/Packages/packages-lock.json.meta
+
+# --- Build Artifacts ---
+*.apk
+*.aab
+*.app
+*.exe
+*.unitypackage
+
+# --- JetBrains Rider specific ---
+*.sln.iml
+
+# --- Other ---
+/Builds/
