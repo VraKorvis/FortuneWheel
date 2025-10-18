@@ -1,15 +1,15 @@
-# 🎯 Roulette Popup Test Task
+# 🎯 Roulette Popup (Test Task) Unity Developer
 
-## 📘 Основная идея
-UI-система для рулетки с анимацией и пулом объектов.  
-Код ориентирован на производительность, отсутствие GC и чистую архитектуру (MVP-подход).
+## 📂 О проекте
+Мини-фича рулетки с UI-анимацией и наградами.  
+Используются DOTween и стандартный ObjectPool.
 
-## ⚙️ Технические решения
-- **Архитектура:** View / Presenter / ServiceLocator (DI).
-- **Анимации:** DOTween с Target-контролем и безопасным Kill.
-- **Пулы:** ObjectPool для иконок наград (без Instantiate в рантайме).
-- **Оптимизация:** 2 draw call.
+## ▶️ Как запустить
+1. Открыть проект в Unity 2022.3+
+2. Сцена: `Assets/Scenes/RouletteScene.unity`
 
-## 🧩 Используемые технологии
-Unity 2022.3+, DOTween, TextMeshPro, ObjectPool API.
+## 🧩 Дополнительно
+Файл `test_atsk.pdf` — исходное задание.  
+Проект сделан без сторонних зависимостей, кроме DOTween и TMP.
+
 
