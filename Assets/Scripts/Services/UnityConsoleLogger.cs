@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Services.Logger
+namespace FSM.Logger
 {
     public class UnityConsoleLogger : ILoggerService
     {

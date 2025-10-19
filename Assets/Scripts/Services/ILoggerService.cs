@@ -1,6 +1,6 @@
 using System;
 
-namespace Services.Logger
+namespace FSM.Logger
 {
     public enum LogLevel
     {

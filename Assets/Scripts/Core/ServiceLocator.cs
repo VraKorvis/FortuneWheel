@@ -28,7 +28,7 @@ namespace Core
                 return (T) service;
             }
 
-            throw new Exception($"Service of type {type} is not registered in ServiceLocator!");
+            throw new Exception($"[ServiceLocator] Service of type {type} is not registered in ServiceLocator!");
         }
 
         public static void Unregister<T>()

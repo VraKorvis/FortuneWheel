@@ -2,8 +2,7 @@ using System;
 using System.Collections.Generic;
 using Core;
 using DG.Tweening;
-using Roulette.Editor;
-using Services.Logger;
+using FSM.Logger;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Pool;
@@ -17,14 +16,14 @@ namespace Roulette
         private ILoggerService _logger;
         private Camera _mainCamera;
 
-        [Header("Spin Animation")] [SerializeField]
-        private int slotCount = 12;
+        [Header("Spin Animation")] 
+        [SerializeField] private int slotCount = 12;
 
         [SerializeField] private float rotationLoops = 5;
         [SerializeField] private float spinDuration = 5f;
 
-        [Header("Reward Animation")] [SerializeField]
-        private int rewardPoolSize = 20;
+        [Header("Reward Animation")] 
+        [SerializeField] private int rewardPoolSize = 20;
 
         [SerializeField] private float defaultScale = 0.7f;
         [SerializeField] private float appearDuration = 0.7f;
@@ -35,7 +34,8 @@ namespace Roulette
         [SerializeField] private float maxStayDuration = 2.5f;
         [SerializeField] private float postRewardDelay = 2f;
 
-        [Header("Ui")] [SerializeField] private Button spinBtn;
+        [Header("Ui")] 
+        [SerializeField] private Button spinBtn;
 
         [SerializeField] private TextMeshProUGUI spinButtonText;
         [SerializeField] private TextMeshProUGUI timerText;
@@ -236,8 +236,6 @@ namespace Roulette
             }
         }
 
-        #endregion
-
         private List<int> PrepareRewardVisuals(int totalReward, int maxObjsPerAnimation)
         {
             int numberOfObjs = Mathf.Min(totalReward, maxObjsPerAnimation);
@@ -253,7 +251,9 @@ namespace Roulette
 
             return rewards;
         }
-
+        
+        #endregion
+        
         private void SetAllIconsActive(bool active)
         {
             foreach (var pair in _iconDictionary)
@@ -280,6 +280,7 @@ namespace Roulette
             SetAllIconsActive(false);
         }
 
+        #region ObjectPool
         private void InitializePools()
         {
             _iconDictionary = new Dictionary<RewardType, GameObject>();
@@ -316,6 +317,7 @@ namespace Roulette
                 _pools[type] = pool;
             }
         }
+        #endregion
 
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Roulette.Editor
+namespace Roulette
 {
     [ExecuteInEditMode]
     public class RouletteSlotLabelGenerator : MonoBehaviour

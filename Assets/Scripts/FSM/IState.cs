@@ -1,4 +1,4 @@
-namespace Services
+namespace FSM
 {
     public interface IState<in TContext>
     {

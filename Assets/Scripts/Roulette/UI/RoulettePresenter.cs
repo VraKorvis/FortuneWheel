@@ -1,8 +1,8 @@
 using System;
 using Core;
 using Roulette.FSM;
-using Services;
-using Services.Logger;
+using FSM;
+using FSM.Logger;
 
 namespace Roulette
 {

@@ -46,29 +46,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Core/Bootstrap.cs" />
+    <Compile Include="Assets/Scripts/Roulette/UI/RewardType.cs" />
+    <Compile Include="Assets/Scripts/Roulette/UI/RoulettePresenter.cs" />
+    <Compile Include="Assets/Scripts/FSM/Fsm.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleAudio.cs" />
     <Compile Include="Assets/Scripts/Roulette/FSM/CooldownState.cs" />
-    <Compile Include="Assets/Scripts/Roulette/IRouletteView.cs" />
     <Compile Include="Assets/Scripts/Core/ServiceLocator.cs" />
-    <Compile Include="Assets/Scripts/Roulette/RoulettePresenter.cs" />
-    <Compile Include="Assets/Scripts/Roulette/RoulettePopup.cs" />
+    <Compile Include="Assets/Scripts/Roulette/Model/RouletteModel.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModulePhysics.cs" />
+    <Compile Include="Assets/Scripts/Roulette/UI/RoulettePopup.cs" />
     <Compile Include="Assets/Scripts/Roulette/RouletteSlotLabelGenerator.cs" />
-    <Compile Include="Assets/Scripts/Roulette/RewardType.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets/Scripts/Core/UpdateManager.cs" />
     <Compile Include="Assets/Scripts/Services/ILoggerService.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUI.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleSprite.cs" />
     <Compile Include="Assets/Scripts/Roulette/FSM/RewardingState.cs" />
-    <Compile Include="Assets/Scripts/Services/IState.cs" />
+    <Compile Include="Assets/Scripts/Roulette/FSM/ActiveState.cs" />
     <Compile Include="Assets/Scripts/Services/UnityConsoleLogger.cs" />
+    <Compile Include="Assets/Scripts/Roulette/UI/IRouletteView.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleEPOOutline.cs" />
-    <Compile Include="Assets/Scripts/Services/Fsm.cs" />
-    <Compile Include="Assets/Scripts/Roulette/FSM/ActiveSate.cs" />
     <Compile Include="Assets/DOTween/Modules/DOTweenModuleUtils.cs" />
-    <Compile Include="Assets/Scripts/Roulette/RouletteModel.cs" />
+    <Compile Include="Assets/Scripts/FSM/IState.cs" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />

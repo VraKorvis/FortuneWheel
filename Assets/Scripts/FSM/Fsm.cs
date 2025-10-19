@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using Services.Logger;
+using FSM.Logger;
 
-namespace Services
+namespace FSM
 {
     public class Fsm<TContext>
     {
